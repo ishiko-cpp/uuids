@@ -27,7 +27,7 @@ public:
     const char* message(int ev, char* buffer, size_t len) const noexcept override;
 
 private:
-    UUIDsErrorCategory() noexcept = default;
+    UUIDsErrorCategory() noexcept;
 };
 
 void Fail(UUIDsErrorCategory::Value value, Error& error) noexcept;

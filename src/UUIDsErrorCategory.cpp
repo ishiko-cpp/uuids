@@ -8,6 +8,11 @@
 
 using namespace Ishiko;
 
+UUIDsErrorCategory::UUIDsErrorCategory() noexcept
+    : ErrorCategory(ID(0x22f1e287ba3247faULL, 0xa4e6ca54f00066e1ULL)) // 22f1e287-ba32-47fa-a4e6-ca54f00066e1
+{
+}
+
 const UUIDsErrorCategory& UUIDsErrorCategory::Get() noexcept
 {
     static UUIDsErrorCategory theCategory;
